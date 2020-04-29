@@ -1,6 +1,8 @@
 # NoteConversors
 This programs take part in the development of my final university project. I have made this program to check the viability of the Wavetable sintesis to generate sound. This method uses a linear interpolation formula between sound samples. This program applies Waveteble sintesis to the sound samples of a .wav file, consequently generates another .wav file with the result of use the before mentioned formula. There are two differents implementations of this formula, one made using floating point arithmetic (folder NoteConversor_double_3) and the other one, using fix point arithmetic (folder NoteConversor_fix_3).
 
+Use make to generate the executable version. Differents levels of optimization are defined in the makefile.
+
 How to use:
 
 In order to execute this program, It's needed to define as arguments the location of the input .wav file (preceding by -F), the location where the generated .wav file will be stored (preceding by -O, the output file is going to have almost the same name as the input file, the only different will reside at the ending of the name with the "_cool" sentence). In case the defined location after -O doesn't refers to a location in the system, the route of this location will be added at the end of the name of the output file. 
