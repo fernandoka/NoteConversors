@@ -9,10 +9,13 @@ static FILE *fd;
 static FILE *fd_out;	
 static wav_header_t file;
 static double step; // Num steps of distance between samples
-static bool verbose = false;
+static bool verbose = false;	
 static int QM;
 
 /* Const variables */
+static const int  maxFormatValues[4]= { (int)0x0000007F, (int)0x00007FFF, (int)0x007FFFFF, (int)0x7FFFFFFF};
+static const int  minFormatValues[4]= { (int)0xFFFFFF80, (int)0xFFFF8000, (int)0xFF800000, (int)0x80000000};
+
 static const char *id_0Mark = "RIFF";
 static const char *id_1Mark = "WAVE";
 static const char *id_2Mark = "fmt ";
@@ -227,16 +230,21 @@ static bool getFreq(const char *s, int l, double *r){
 		
 }
 
-static int roundCheckOverUnderFlow(long long int n){
-	int aux;
 
+
+static int roundCheckOverUnderFlow(long long int n){
+	int aux, max, min;
+
+	max = maxFormatValues[file.numBitsPerSample/8-1];
+	min = minFormatValues[file.numBitsPerSample/8-1];
+	
 	n += (long long int)1<<(QM_ARITH-1); 
 	aux = (int)(n >> (QM_ARITH));
 
-	if (aux > (int)INT24_MAX)
-		aux = (int)INT24_MAX;
-	else if(aux < (int)INT24_MIN)
-		aux = (int)INT24_MIN;
+	if (aux > max)
+		aux = max;
+	else if(aux < min)
+		aux = min;
 
 	return aux;
 }

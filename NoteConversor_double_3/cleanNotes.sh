@@ -1,4 +1,4 @@
-echo "CLEANING FOLDERS..."
-rm -f AllNotes/*
-rm -f FUR_ELISE/*
-rm -f Twinkle_Twinkle_Little_Star/*
+echo "REMOVING FOLDERS..."
+rm -rf AllNotes/
+rm -rf FUR_ELISE/
+rm -rf Twinkle_Twinkle_Little_Star/

@@ -1,5 +1,11 @@
+echo "CREATING FOLDERS..."
+mkdir Twinkle_Twinkle_Little_Star
+mkdir FUR_ELISE
+mkdir AllNotes
+
+
 # Notas de estrellita:
-echo "GENERANDO NOTAS EN CARPETA Twinkle_Twinkle_Little_Star"
+echo "GENERATING NOTES IN Twinkle_Twinkle_Little_Star"
 
 ./wav_parser_op3.elf -F ../SameSize-1.06MB/A4v8-2.wav -O Twinkle_Twinkle_Little_Star/A4_ -T A4 -B A4
 
@@ -14,7 +20,7 @@ echo "GENERANDO NOTAS EN CARPETA Twinkle_Twinkle_Little_Star"
 ./wav_parser_op3.elf -F ../SameSize-1.06MB/C4v8-2.wav -O Twinkle_Twinkle_Little_Star/C4_ -T C4 -B C4
 
 
-echo "GENERANDO NOTAS EN CARPETA FUR_ELISE"
+echo "GENERATING NOTES IN FUR_ELISE"
 
 ./wav_parser_op3.elf -F ../SameSize-1.06MB/A3v8-2.wav -O FUR_ELISE/A3_ -T A3 -B A3
 
@@ -32,7 +38,7 @@ echo "GENERANDO NOTAS EN CARPETA FUR_ELISE"
 ./wav_parser_op3.elf -F ../SameSize-1.06MB/C4v8-2.wav -O FUR_ELISE/C4_ -T C4 -B C4
 
 
-echo "GENERANDO NOTAS EN CARPETA AllNotes"
+echo "GENERATING NOTES IN AllNotes"
 # Todas las notas:
 # La
 ./wav_parser_op3.elf -F ../SameSize-1.06MB/A0v8-2.wav -O AllNotes/A#0_ -T A#0 -B A0

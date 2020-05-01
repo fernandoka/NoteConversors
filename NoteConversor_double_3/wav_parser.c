@@ -299,12 +299,12 @@ static unsigned int writeSamples(){
 	int wavDataIndex;
 	unsigned int numBytesForInterpolatedSample;
 
-	// Leo todas las muestras
+	// Read all samples
 	wavData = (unsigned char*) malloc(file.numBytesForSampleData);
 	if( fread( (void *)wavData, 1, file.numBytesForSampleData, fd ) != file.numBytesForSampleData )
 		manageReadWriteErrors(fd);
 
-	// Trato las muestras como si fuera una matriz. Cada fila es un canal.
+	// The sample are seen like if there are stored in a matrix
 	samples = (int*) malloc(sizeof(int)*totalSamplesInFile);	
 	outSamples = (int*) malloc(totalSamplesInFile*sizeof(int));
 

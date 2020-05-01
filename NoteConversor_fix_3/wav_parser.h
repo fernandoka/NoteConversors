@@ -33,12 +33,7 @@ typedef struct {
 #define QN 1
 #define QM_ARITH 32 
 
-#define INT24_MAX 0x007FFFFF 
-#define INT24_MIN 0xFF800000
-
 #define DOUBLE_TO_FIX(t,d,q) ( (t) ( (d)*(double)(1ULL<<(q)) ))
-
-#define FMUL(a,b,q) ( ((a)*(b))>>(q) )
 
 // Constant
 #define NUM_NOTES_PER_OCTAVE 12
