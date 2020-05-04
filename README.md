@@ -13,15 +13,16 @@ This project is also provided with two shell scripts, one of them generates all 
 The folders Fur_Elise and Twinkle Twinkle_Twinkle_Little_Star contains the corresponding notes to play the firsts notes for each song.
 
 
-The .wav files in the SameSize-1.06MB, It had been downloaded from: http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
-
-File Link of the site is "69MiB	Best quality. 24bit samples, stereo, 2 velocity layers"
+The .wav files in the SameSize-1.06MB are originally from the website: http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
+Downloaded from the "Salamander Grand Piano" section
+File entry in the site -> "1.18GiB Best quality. 48kHz 24bit samples"
+Original author of the audio recording sounds, Alexander Holm.
 
 Commands examples:
 	
-  >	./wav_parser_op3.elf -F notasBuenas/C4v8.wav -O notasFlama/ -T C#4 -B C4
+  >./wav_parser_op3.elf -F notasBuenas/C4v8.wav -O notasFlama/ -T C#4 -B C4
 
-  >	./wav_parser_op3.elf -F notasBuenas/A4v8.wav -O notasFlama/ -T B4 -B A4
+  >./wav_parser_op3.elf -F notasBuenas/A4v8.wav -O notasFlama/ -T B4 -B A4
 
   > ./wav_parser.elf -F ../48.8Khz24bit_Sorted/C4v8.wav -O iii -T C#4 -B C4
 
