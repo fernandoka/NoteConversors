@@ -19,7 +19,7 @@ Downloaded from the "Salamander Grand Piano" section
 
 File entry in the site -> "1.18GiB Best quality. 48kHz 24bit samples"
 
-Original author of the audio recording sounds, Alexander Holm.
+Original author of the audio recording files, Alexander Holm.
 
 Commands examples:
 	
