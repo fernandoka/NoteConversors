@@ -3,6 +3,8 @@ This programs take part in the development of my final university project while 
 
 Use make to generate the executable. Differents levels of optimization are defined in the makefile.
 
+Link to the digital piano project (implemented in a FPGA), which use real time wavetable synthesis: https://github.com/fernandoka/Digital-Piano-VHDL-MIDI-Player
+
 ## How to use
 
 In order to execute this program, It's needed to define as arguments the location of the input .wav file (preceding by -F), the location where the generated .wav file will be stored (preceding by -O, the output file is going to have almost the same name as the input file, the only different will reside at the ending of the name with the "_cool" sentence). In case the defined location after -O doesn't refers to a location in the system, the route of this location will be added at the end of the name of the output file. 
