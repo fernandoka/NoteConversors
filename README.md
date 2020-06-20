@@ -25,7 +25,7 @@ The folders Fur_Elise and Twinkle Twinkle_Twinkle_Little_Star contains the corre
 
   > sh generateNotes.sh
 ## Additional Notes
-The .wav files in the SameSize-1.06MB are originally from the [Freepats project](http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html)
+The .wav files in the SameSize-1.06MB are originally from the [FreePats project](http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html)
 
 Downloaded from the "Salamander Grand Piano" section
 
