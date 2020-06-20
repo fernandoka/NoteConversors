@@ -3,7 +3,7 @@ This programs take part in the development of my final university project. I hav
 
 Use make to generate the executable. Differents levels of optimization are defined in the makefile.
 
-How to use:
+## How to use
 
 In order to execute this program, It's needed to define as arguments the location of the input .wav file (preceding by -F), the location where the generated .wav file will be stored (preceding by -O, the output file is going to have almost the same name as the input file, the only different will reside at the ending of the name with the "_cool" sentence). In case the defined location after -O doesn't refers to a location in the system, the route of this location will be added at the end of the name of the output file. 
 
@@ -13,15 +13,7 @@ This project is also provided with two shell scripts, one of them generates all 
 The folders Fur_Elise and Twinkle Twinkle_Twinkle_Little_Star contains the corresponding notes to play the firsts notes for each song.
 
 
-The .wav files in the SameSize-1.06MB are originally from the website: http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
-
-Downloaded from the "Salamander Grand Piano" section
-
-File entry in the site -> "1.18GiB Best quality. 48kHz 24bit samples"
-
-Original author of the audio recording files, Alexander Holm.
-
-Commands examples:
+## Commands examples
 	
   >./wav_parser_op3.elf -F notasBuenas/C4v8.wav -O notasFlama/ -T C#4 -B C4
 
@@ -32,3 +24,11 @@ Commands examples:
   > sh cleanNotes.sh
 
   > sh generateNotes.sh
+## Additional Notes
+The .wav files in the SameSize-1.06MB are originally from the website: http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
+
+Downloaded from the "Salamander Grand Piano" section
+
+File entry in the site -> "1.18GiB Best quality. 48kHz 24bit samples"
+
+Original author of the audio recording files, Alexander Holm.
